@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiz="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Continue entering your details for a quick checkout" />
+    <title>GameHub | Billing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/media.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/5d82540413.js" crossorigin="anonymous"></script>
+    <script src="./js/checkout_two.js" defer></script>
+    <script src="./js/hamburger.js" defer></script>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3395434,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+</head>
+<body>
+    <header class="topbar">
+        <nav class="navbar nav-container">
+            <a href="index.html"><img class="logo" src="images/Logo_game-hub.png" alt="Game hub logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="games.html" class="nav-link">All Games</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>    
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> 
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="cart-icon">
+            <a href="cart.html"><i class="fas fa-shopping-cart fa-lg active-cart" aria-hidden="true"></i></a>
+        </div>
+        </nav>
+</header>
+    <main class="checkout_one">
+        <section>
+            <img src="images/prog-bar-2.png" class="prog-bar">
+        </section>
+        <h1>Billing</h1>
+        <form id="form-container">
+                    <div class="input-container">
+                        <label for="cardName">Cardholder name (Required)</label>
+                        <input type="text" id="cardName" name="cardName" placeholder="Full Name">
+                        <div class="form-error" id="cardName-error">Please enter a name</div>
+                    </div>
+                    <div class="input-container">
+                        <label for="card">Card number (12 digits)</label>
+                        <input type="text" id="card" name="card" placeholder="1111 2222 3333 4444">
+                        <div class="form-error" id="card-error">Please enter a valid card number</div>
+                    </div>
+            <section class="smallInput">
+                <div class="input-container smallerInputOne">
+                    <label for="exp">Exp date</label>
+                    <input type="text" id="exp" name="exp" class="dateInput" placeholder="MM/YY">
+                    <div class="form-error" id="exp-error">Please enter a date</div>
+                </div>
+                <div class="input-container smallerInputTwo">
+                    <label for="ccv">CCV</label>
+                    <input type="text" id="ccv" name="ccv" class="ccvInput" placeholder="123">
+                    <div class="form-error" id="ccv-error">Please enter CCV</div>
+                </div>
+            </section>
+            <button type="submit" class="submitForm cta_checkout">Go to overview</button>
+        </form>
+    </main>
+    <footer>
+        <div class="icon">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+        </div>
+        <div class="icon">
+            <a href="games.html"><i class="fa-solid fa-gamepad"></i>Games</a>
+        </div>
+        <div class="icon">
+            <a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a>
+        </div>
+        <div class="icon">
+            <a href="contact.html"><i class="fa-solid fa-phone-flip"></i>Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

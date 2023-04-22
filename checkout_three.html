@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiz="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buy and sell games in the GameHub universe of games." />
-    <title>GameHub | Home</title>
+    <meta name="description" content="Get a quick overview of your cart before you check out" />
+    <title>GameHub | Overview</title>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <link href="css/styles.css" rel="stylesheet"/>
     <link href="css/media.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/5d82540413.js" crossorigin="anonymous"></script>
-    <script src="./js/script.js" defer type="module"></script>
-    <script src="./js/hamburger.js" defer></script>
     <!-- Hotjar Tracking Code for my site -->
     <script>
         (function(h,o,t,j,a,r){
@@ -28,40 +26,40 @@
     <header class="topbar">
         <nav class="navbar nav-container">
             <a href="index.html"><img class="logo" src="images/Logo_game-hub.png" alt="Game hub logo"></a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="active nav-link">Home</a></li>
-                <li class="nav-item"><a href="games.html" class="nav-link">All Games</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>    
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> 
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <div class="cart-icon">
-                <a href="cart.html"><i class="fas fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
-            </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="games.html" class="nav-link">All Games</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>    
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> 
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="cart-icon">
+            <a href="cart.html"><i class="fas fa-shopping-cart fa-lg active-cart" aria-hidden="true"></i></a>
+        </div>
         </nav>
-    </header>
-    <main>
-        <!--Hero Section-->
-        <section class="hero">
-            <div class="hero_content">
-                <h1 class="hero_content_heading">Coming soon</h1>
-                <h3 class="hero-h3">Furious</h3>
-                <p>Fight fire with fury <span class="hero_content_date">12/02/23</span></p>
-            </div>
-        </section>
-        <!--New games-->
-        <section class="container">
-            <h1>Featured Games</h1>
-            <div class="featured-games">
-            </div>
-            <h1>new games</h1>
-            <div class="featured">
-            </div>
-        </section>
+</header>
+    <main class="checkout_one checkout_three">
+            <section>
+                <img src="images/prog-bar-3.png" class="prog-bar prog-bar-3">
+            </section>
+        <h1>Overview</h1>
+        <div class="form-wrapper overview_content">  
+            <section class="overview_text">
+                    <p>1 x Space War PS5</p>
+                    <p>Subtotal: €30</p>
+                    <p>Shipping: Free</p>
+                    <hr>
+                    <p>email@email.com</p>
+                    <p>Firstname Lastname</p>
+                    <p>Address</p>
+                    <p>Card: **** **** **** 4567</p>
+                    <a href="checkout_success.html" class="secondary_cta_large place_order">Place order</a>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="icon">
@@ -77,5 +75,6 @@
             <a href="contact.html"><i class="fa-solid fa-phone-flip"></i>Contact</a>
         </div>
     </footer>
+    <script src="./js/hamburger.js"></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+:root {
+    --text-heading:"bebas neue";
+    --text-hero:"Bungee";
+    --text-other:"inter";
+    --cta-primary: #B4599E;
+    --cta-secondary: #F68B39;
+    --cta-hover: #3FA535;
+    --cta-focused: #23551E;
+    --cta-disabled: #A49DA2;
+}

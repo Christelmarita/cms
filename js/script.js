@@ -5,11 +5,13 @@ const featuredBase = "/products?&featured=true";
 const pagesBase = "/wp-json/wp/v2/pages";
 const fullPagesURL = apiBase + pagesBase;
 const fullProductURL = apiBase + woocommerceBase + productBase;
-const fullFeaturedURL = apiBase + woocommerceBase + featuredBase;
+const fullFeaturedURL = "https://cms.onibodesign.no/products?&featured=true";
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 const url = `https://cms.onibodesign.no/wp-json/wc/store/products/${id}`;
+
+// REGULAR PRODUCTS //
 
 async function getProducts() {
     const response = await fetch(fullProductURL);
@@ -22,13 +24,6 @@ async function getSingleProduct(id) {
     const result = await response.json();
     return result;
 }
-
-async function getFeaturedProducts() {
-    const response = await fetch(`https://cms.onibodesign.no/products?&featured=true`);
-    const featuredProducts = await response.json()
-    return featuredProducts;
-}
-
 
 function createProductHTML(product) {
     const container = document.querySelector(".featured");
@@ -92,3 +87,10 @@ async function main() {
 
 main()
 
+// FEATURED //
+
+async function getFeaturedProducts() {
+    const response = await fetch(fullFeaturedURL);
+    const featuredProducts = await response.json()
+    return featuredProducts;
+}

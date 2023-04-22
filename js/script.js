@@ -24,11 +24,10 @@ async function getSingleProduct(id) {
 }
 
 async function getFeaturedProducts() {
-    const response = await fetch(fullFeaturedURL);
+    const response = await fetch(`https://cms.onibodesign.no/products?&featured=true`);
     const featuredProducts = await response.json()
     return featuredProducts;
 }
-
 
 
 function createProductHTML(product) {

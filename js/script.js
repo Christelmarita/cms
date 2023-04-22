@@ -39,9 +39,11 @@ function createProductHTML(product) {
         img.classList.add("card-image");
         img.src = imgData.src;
         img.alt = imgData.alt;
-        productContainer.append(img)
+        img.addEventListener('click', () => {
+            window.location.href = `../products/details.html?id=${product.id}`;
+        });
+        productContainer.append(img);
     }
-
 
     const title = document.createElement("p");
     title.innerText = product.name;
@@ -115,7 +117,10 @@ function createFeaturedProductHTML(featuredProduct) {
         img.classList.add("card-image");
         img.src = imgData.src;
         img.alt = imgData.alt;
-        productContainer.append(img)
+        productContainer.append(img);
+        img.addEventListener('click', () => {
+            window.location.href = `../products/details.html?id=${featuredProduct.id}`;
+        });
     }
 
 

@@ -2,7 +2,8 @@
 
 @media (max-width: 1205px) {
 
-    .featured {
+    .featured,
+    .featured-games {
     grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -15,7 +16,8 @@
 background-position-x: 24%;
     }
 
-.featured {
+.featured,
+.featured-games {
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     display: grid;
@@ -136,7 +138,8 @@ background-position-x: 24%;
 
 @media (max-width: 600px) {
     
-.featured {
+.featured,
+.featured-games {
         grid-template-columns: repeat(1, 1fr);
         max-width: 600px;
     }

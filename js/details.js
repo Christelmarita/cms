@@ -37,7 +37,7 @@ function createProductHTML(product) {
 
     const title = document.createElement("h1");
     title.innerText = product.name;
-    title.classList.add("product_name");
+    title.classList.add("product_name_big");
     productContainerTwo.append(title);
 
     const console = document.createElement("p");
@@ -51,7 +51,7 @@ function createProductHTML(product) {
     productContainerTwo.append(price);
 
     const description = document.createElement("p");
-    description.innerText = product.description.replace('<p>', '').replace('</p>', '');;
+    description.innerText = product.description.replace('<p>', '').replace('</p>', '');
     description.classList.add("product_description");
     productContainerTwo.append(description);
 

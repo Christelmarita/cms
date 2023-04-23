@@ -391,11 +391,15 @@ footer {
 }
 
 .product_price_big {
-    font-size: 3em;
+    font-size: 2em;
     color: #FEC818;
     font-weight: 700;
     margin-bottom: -7px;
     margin-top: auto;
+}
+
+.product_name_big {
+    font-size: 3em;
 }
 
 .product_condition {

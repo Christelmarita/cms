@@ -357,6 +357,7 @@ footer {
     margin-right: -2px;
     margin-left: 137px;
     text-decoration: underline;
+    font-family: var(--text-other);
 }
 
 .cta {

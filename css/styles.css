@@ -327,6 +327,7 @@ footer {
     filter:brightness(1.2);
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
 /*product page*/

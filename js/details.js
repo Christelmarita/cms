@@ -1,14 +1,4 @@
-const apiBase = "https://cms.onibodesign.no";
-const woocommerceBase = "/wp-json/wc/store";
-const productBase = "/products";
-const featuredBase = "/products?&featured=true";
-const pagesBase = "/wp-json/wp/v2/pages";
-const fullPagesURL = apiBase + pagesBase;
-const fullProductURL = apiBase + woocommerceBase + productBase;
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
-const url = `https://cms.onibodesign.no/wp-json/wc/store/products/${id}`;
+import {url} from "./constant.js"
 
 
 async function getSingleProduct(id) {
